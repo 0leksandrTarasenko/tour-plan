@@ -1,3 +1,0 @@
-# tour-plan
-
-Aleksandr Tarasenko
