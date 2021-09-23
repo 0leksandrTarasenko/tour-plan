@@ -18,7 +18,7 @@
             margin: 45px auto 0
             width: 730px
             padding: 0 62px 30px
-            &:before
+            &::before
                 position: absolute
                 content: ''
                 width: 70px
@@ -27,15 +27,34 @@
                 background-repeat: no-repeat
                 left: 62px
                 top: 13px
-            &:after
+            &::after
                 position: absolute
                 content: ''
                 width: 70px
                 height: 47px
                 background-image: url(../img/quote-right.svg)
                 background-repeat: no-repeat
-                right: 62px
+                right: 60px
                 top: 118px
+        &__button
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            width: 30px
+            height: 30px
+            border: none
+            cursor: pointer
+            background-repeat: no-repeat
+            background-position: center
+            background-size: 10px
+            background-color: transparent
+            z-index: 99
+            &--prev
+                background-image: url(../img/arrow-prev-secondary.svg)
+                left: 0
+            &--next
+                background-image: url(../img/arrow-next-secondary.svg)
+                right: 0
         &__profile
             display: flex
             flex-direction: column
